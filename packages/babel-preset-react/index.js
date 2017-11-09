@@ -8,8 +8,6 @@ module.exports = function(context, options) {
     ],
   };
 
-  console.log(environment);
-
   if (environment === 'development') {
     config.plugins.push(
       require.resolve('babel-plugin-flow-react-proptypes'),
