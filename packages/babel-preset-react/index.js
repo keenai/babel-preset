@@ -4,7 +4,34 @@ module.exports = function(context, options) {
     presets: [
       require.resolve('@babel/preset-react'),
     ],
+    plugins: [
+    ],
   };
+
+  console.log(environment);
+
+  if (environment === 'development') {
+    config.plugins.push(
+      require.resolve('babel-plugin-flow-react-proptypes'),
+      require.resolve('@babel/plugin-transform-react-jsx-self'),
+      require.resolve('@babel/plugin-transform-react-jsx-source'),
+    );
+  }
+
+  if (environment === 'test') {
+    config.plugins.push(
+      require.resolve('@babel/plugin-transform-react-jsx-self'),
+      require.resolve('@babel/plugin-transform-react-jsx-source'),
+    );
+  }
+
+  if (environment === 'production') {
+    config.plugins.push(
+      require.resolve('babel-plugin-transform-react-remove-prop-types'),
+      require.resolve('@babel/plugin-transform-react-inline-elements'),
+      require.resolve('@babel/plugin-transform-react-constant-elements'),
+    );
+  }
 
   return config;
 };
