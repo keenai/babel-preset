@@ -7,7 +7,10 @@ module.exports = function(context, options = {}) {
     ],
 
     plugins: [
-      require.resolve('@babel/plugin-syntax-object-rest-spread'),
+      require.resolve('@babel/plugin-syntax-class-properties'),
+      require.resolve('@babel/plugin-syntax-dynamic-import'),
+      require.resolve('@babel/plugin-syntax-export-extensions'),
+      require.resolve('@babel/plugin-proposal-object-rest-spread'),
     ],
   };
 
