@@ -1,6 +1,6 @@
 {
 	"name": "@keenai/babel-preset-core",
-	"version": "0.0.0",
+	"version": "0.0.1-0",
 	"description": "Core babel configurations",
 	"main": "index.js",
 	"author": "Gabe Hayes <gabe@ric.ricoh.com>",
