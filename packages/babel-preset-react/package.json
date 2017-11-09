@@ -1,6 +1,6 @@
 {
 	"name": "@keenai/babel-preset-react",
-	"version": "0.0.1-0",
+	"version": "0.0.1",
 	"description": "React babel configurations",
 	"main": "index.js",
 	"author": "Gabe Hayes <gabe@ric.ricoh.com>",
