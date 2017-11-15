@@ -3,7 +3,7 @@
 	"version": "0.0.2",
 	"description": "React babel configurations",
 	"main": "index.js",
-	"author": "Gabe Hayes <gabe@ric.ricoh.com>",
+	"author": "Gabe Hayes <gabriel.hayes@gmail.com>",
 	"license": "MIT",
 	"dependencies": {
 		"@babel/core": "^7.0.0-beta.32",
